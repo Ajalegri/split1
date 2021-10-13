@@ -1,5 +1,7 @@
 INCLUDE Smokey
+INCLUDE Maximillion
 INCLUDE Conclusion
+
 
 -> main
 
@@ -19,9 +21,9 @@ Inside the hotel's lobby there are six ghosts. The detective walked over to...
 // * 3
 //     -> 3 ->
 //     -> main
-// * 4
-//     -> 4 ->
-//     -> main
+* the strapping gentlemen with the amazing moustache.
+    -> Maximillion ->
+    -> main
 // * 5
 //     -> 5 ->
 //     -> main
