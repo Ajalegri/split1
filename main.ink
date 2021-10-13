@@ -3,12 +3,18 @@ INCLUDE Maximillion
 INCLUDE Conclusion
 
 
--> main
+-> intro
 
-=== main ===
+=== intro ===
 This village is normally quiet, but right now the town square is abuzz. Everyone's right sock has been stolen!
 
-The villagers point the detective in the direction of an abandoned hotel, believing one of the ghosts inside is to blame.
+Who would want everyone's right sock? All the villagers know is that when the socks were stolen, they all heard someone coughing and whistling an eerie tune.
+
+They're also certain that one of the ghosts living in an abandoned hotel nearby are to blame, and so The Detective investigates.
+
+* [...] -> main
+
+=== main ===
 
 Inside the hotel's lobby there are six ghosts. The detective walked over to...
 
