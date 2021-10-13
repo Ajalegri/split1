@@ -21,15 +21,15 @@ Inside the hotel's lobby there are six ghosts. The detective walked over to...
 // * 3
 //     -> 3 ->
 //     -> main
-* the strapping gentlemen with the amazing moustache.
-    -> Maximillion ->
-    -> main
+// * 4
+//     -> 4 ->
+//     -> main
 // * 5
 //     -> 5 ->
 //     -> main
-// * 6
-//     -> 6 ->
-//     -> main
+* the fancy gentlemen dressed in an exquisite suit and weilds an amazing moustache.
+    -> Maximillion ->
+    -> main
 
 
 * -> Conclusion
