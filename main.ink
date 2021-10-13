@@ -20,9 +20,9 @@ They're also certain that one of the ghosts living in an abandoned hotel nearby 
 
 Inside the hotel's lobby there are six ghosts. The detective walked over to...
 
-// * 1
-//     -> 1 ->
-//     -> main
+* the tired-looking woman with a baby.
+    -> Martha ->
+    -> main
 // * 2
 //     -> 2 ->
 //     -> main
