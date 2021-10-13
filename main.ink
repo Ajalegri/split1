@@ -2,7 +2,7 @@ INCLUDE Smokey
 INCLUDE Maximilian
 INCLUDE Conclusion
 INCLUDE Martha
-
+INCLUDE Xiao
 
 
 -> intro
@@ -30,8 +30,9 @@ Inside the hotel's lobby there are six ghosts. The detective walked over to...
     -> Smokey ->
     -> main
 // * 4
-//     -> 4 ->
+//     -> Xiao ->
 //     -> main
+* The one with an unknown name
 // * 5
 //     -> 5 ->
 //     -> main
