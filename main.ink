@@ -30,12 +30,11 @@ Inside the hotel's lobby there are six ghosts. The detective walked over to...
     -> Smokey ->
     -> main
 // * 4
-//     -> Xiao ->
+//     -> 4 ->
 //     -> main
 * The one with an unknown name
-// * 5
-//     -> 5 ->
-//     -> main
+    -> Xiao ->
+    -> main
 * the fancy gentlemen dressed in an exquisite suit and weilds an amazing moustache.
     -> Maximilian ->
     -> main
