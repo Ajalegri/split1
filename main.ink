@@ -21,12 +21,12 @@ Inside the hotel's lobby there are six ghosts. The detective walked over to...
 // * 1
 //     -> 1 ->
 //     -> main
+// * 2
+//     -> 2 ->
+//     -> main
 * the one dressed in old-timey overalls and covered in soot.
     -> Smokey ->
     -> main
-// * 3
-//     -> 3 ->
-//     -> main
 // * 4
 //     -> 4 ->
 //     -> main
