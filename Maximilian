@@ -1,17 +1,6 @@
 === Maximilian ===
     
     = interrogation
-        UNKNON GHOST: "Hello there, young lad! How may I be of service to you today?", said the ghost.
-        
-        DETECTIVE: "Hi Mr..."
-        
-        MAXIMILIAN: Sir Maximilian's the name, don't wear it out now, heh.
-        
-        DETECTIVE: Hello, Sir Maximilian. I have a couple questions for you...
-    
-        * Anything you can tell me about the other ghosts in this house?
-            MAXIMILIAN: Well I know that there are some really nasty ghosts in here. Some always coughing, even some that likes to steal things.
-            DETECTIVE: Wow, thanks for the information.
-            ** Good Bye.
-                MAXIMILIAN: Goodbye!
-                ->->
+        * Hello there.
+        * Good Bye. ->->
+        - -> Maximilian
