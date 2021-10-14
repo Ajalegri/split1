@@ -5,10 +5,10 @@ INCLUDE Conclusion
 INCLUDE States
 
 // Characters
-INCLUDE Smokey
-INCLUDE Maximilian
 INCLUDE Martha
+INCLUDE Smokey
 INCLUDE Xiao
+INCLUDE Maximilian
 
 
 -> intro
