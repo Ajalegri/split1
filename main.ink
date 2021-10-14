@@ -1,10 +1,14 @@
-INCLUDE Smokey
-INCLUDE Maximilian
+// Story
 INCLUDE Conclusion
-INCLUDE Martha
-INCLUDE Xiao
+
+// States
 INCLUDE States
 
+// Characters
+INCLUDE Smokey
+INCLUDE Maximilian
+INCLUDE Martha
+INCLUDE Xiao
 
 
 -> intro
