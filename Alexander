@@ -1,0 +1,55 @@
+=== Alexander ===
+    
+	
+	
+    = interrogation
+	VAR cardCount = 1
+	
+	“Hello there, I was wondering if I could ask you a few questions.”
+
+	A pen appears in the old man’s hand and he hastily scribbles something into his notebook.
+
+	“First, you must answer me a question!” He pockets the notebook and pulls a card out of his deck, showing it to you without looking at it. A worn card shows a knight on a horse, holding a flag. Below, the word ‘DEATH’ is written. “Do you worship God?”
+	->alexander_intro_q
+    
+	===alexander_intro_q
+	
+        *“Death? Is Death supposed to be God?” 
+			“If death is a god, how is he so easily defeated? After all, look at who you’re speaking to.” 
+			
+			He has a twinkle in his eye as he flourishes his hands in a theatrical way. The cards vanish. 
+		->alex_main
+		
+		*“I wouldn’t say that I’m a religious person.”
+			“You have deeper wells of belief than you allow. We are all gods here, perhaps YOU more than most.” 
+			
+			He has a twinkle in his eye as he flourishes his hands in a theatrical way. The cards vanish. 
+		->alex_main
+		
+		+“Please, if you could just answer a couple questions…”	
+			~ cardCount++
+			“Oh, is the card not to your liking? Let me find one more suited to you.” He pulls another card out and shows it to you without looking at it. In his hand are {cardCount} worn cards that show a knight on a horse, holding a flag. Below each, the word ‘DEATH’ is written. The deck of cards doesn’t seem to be any smaller. He asks again, “Do you worship God?”
+            ->alexander_intro_q
+	
+	===alex_main
+	The grin on his face gives you the impression that he’s very impressed with himself. “My name is Alexander. Think hard on the truths I have shared with you.”
+
+	
+	*"Does anyone here like to whistle?"
+		"Hmmm, I suppose I've heard the wealthy man, Max, he whistles a jaunty tune on occasion. Martha tends to whistle to her baby when her mouth is not eternally flapping, ha. And I, of course, can sound like any songbird I want! Would you like to hear?"
+		
+		->->
+
+	*"Out of Martha, you, and Maximilian, who would you say whistles the spookiest tune?"
+        His face shifts unpleasantly. "Oh that Martha, she doesn't have a jaunty soul, it's all eerie and sad. No wonder that child won't stop crying."
+		->->
+		
+
+	*"You ever notice anyone around here coughing?"
+		"My lungs are too full of the spirit of creativity to hack anything up! And that quiet one, I forget his name - he's never coughed once. The rest of this hotel sounds like a hospital wing, phew!"
+		->->
+
+	*"I hear that Maximilian, Smokey, Henry, and Martha all are coughers. Would you say any of them coughs more, or louder than the others?
+		"Oh, I suppose Smokey, of course, and Martha - Henry coughs like a dainty elk."
+				
+				->->

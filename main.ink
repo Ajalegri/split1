@@ -9,6 +9,7 @@ INCLUDE Martha
 INCLUDE Smokey
 INCLUDE Xiao
 INCLUDE Maximilian
+INCLUDE Alexander
 
 
 -> intro
@@ -29,9 +30,9 @@ Inside the hotel's lobby there are six ghosts. The detective walked over to...
 * the tired-looking woman with a baby.
     -> Martha ->
     -> main
-// * 2
-//     -> 2 ->
-//     -> main
+* An older ghost wearing a tattered cheap suit jacket decades out of style, holding a notebook and a deck of oversized cards.
+     -> Alexander ->
+     -> main
 * the one dressed in old-timey overalls and covered in soot.
     -> Smokey ->
     -> main
