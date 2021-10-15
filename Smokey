@@ -9,7 +9,7 @@
         "Woah there fella, you don't need to shout!" The ghost raised his voice and immediately began coughing violently.
         The Detective sighs.
             ***"Do you know anyone who would want right socks?"[], The Detective asked, loudly.
-            The ghost stopped coughing. "Socks? Well, poor Martha is always cleaning up everywhere. She might have grabbed some, though I didn't notice it.
+            The ghost stopped coughing. "Socks? Well, poor Martha is always cleaning up everywhere. She might have grabbed some, though I didn't notice it. {move_to_state(WantsSocks, A3)}
                     **** [Thank you.] "Thank you for your time." As The Detective walked away, the sooty ghost floated away to the next floor, covering them with ash as he flew overhead.
                 ->->
         * I can't learn anything useful from this one.

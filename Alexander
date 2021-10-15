@@ -35,21 +35,21 @@
 	The grin on his face gives you the impression that he’s very impressed with himself. “My name is Alexander. Think hard on the truths I have shared with you.”
 
 	
-	*"Does anyone here like to whistle?"
-		"Hmmm, I suppose I've heard the wealthy man, Max, he whistles a jaunty tune on occasion. Martha tends to whistle to her baby when her mouth is not eternally flapping, ha. And I, of course, can sound like any songbird I want! Would you like to hear?"
+	* {Whistles <= B2} "Does anyone here like to whistle?"
+		"Hmmm, I suppose I've heard the wealthy man, Max, he whistles a jaunty tune on occasion. Martha tends to whistle to her baby when her mouth is not eternally flapping, ha. And I, of course, can sound like any songbird I want! Would you like to hear?" {move_to_state(Whistles, B3)}
 		
 		->->
 
-	*"Out of Martha, you, and Maximilian, who would you say whistles the spookiest tune?"
-        His face shifts unpleasantly. "Oh that Martha, she doesn't have a jaunty soul, it's all eerie and sad. No wonder that child won't stop crying."
+	* {Whistles >= B3} "Out of Martha, you, and Maximilian, who would you say whistles the spookiest tune?"
+        His face shifts unpleasantly. "Oh that Martha, she doesn't have a jaunty soul, it's all eerie and sad. No wonder that child won't stop crying." {move_to_state(Whistles, B4)}
 		->->
 		
 
-	*"You ever notice anyone around here coughing?"
-		"My lungs are too full of the spirit of creativity to hack anything up! And that quiet one, I forget his name - he's never coughed once. The rest of this hotel sounds like a hospital wing, phew!"
+	* {Coughs <= C1} "You ever notice anyone around here coughing?"
+		"My lungs are too full of the spirit of creativity to hack anything up! And that quiet one, I forget his name - he's never coughed once. The rest of this hotel sounds like a hospital wing, phew!" {move_to_state(Coughs, C2)}
 		->->
 
-	*"I hear that Maximilian, Smokey, Henry, and Martha all are coughers. Would you say any of them coughs more, or louder than the others?
-		"Oh, I suppose Smokey, of course, and Martha - Henry coughs like a dainty elk."
+	* {Coughs >= C2} "I hear that Maximilian, Smokey, Henry, and Martha all are coughers. Would you say any of them coughs more, or louder than the others?
+		"Oh, I suppose Smokey, of course, and Martha - Henry coughs like a dainty elk." {move_to_state(Coughs, C3)}
 				
 				->->

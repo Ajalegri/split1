@@ -1,6 +1,15 @@
 === Conclusion ===
-=Wrap
+With the interrogations finished, The Detective reviews their information. -> Review
+=Review
+    * Who would even want socks?
+    {WantsSocks == WantsSocks.None: No idea.}{WantsSocks == A1: It could be Martha, Smokey, Xiao, Henry, or Maximilian.}{WantsSocks == A2: It could be Martha, Xiao, or Henry.}{WantsSocks == A3: It could be Martha or Henry.}{WantsSocks == A4: Just Martha.}
+    * Who whistles an eerie tune?
+    {Whistles == Whistles.None: No idea.}{Whistles == B1: It could be Martha, Alexander, Xiao, Henry, or Maximilian.}{Whistles == B2: It could be Martha, Alexander, Henry, or Maximilian.}{Whistles == B3: It could be Martha, Alexander, or Maximilian.}{Whistles == B4: Just Martha.}
+    * Who coughs a lot?
+    {Coughs == Coughs.None: No idea.}{Coughs == C1: It could be Martha, Alexander, Smokey, Henry, or Maximilian.}{Coughs == C2: It could be Martha, Smokey, Henry, or Maximilian.}{Coughs == C3: It could be Martha or Smokey.}{Coughs == C4: Just Martha.}
     * -> Inconclusive
-    - -> Conclusion
+    - -> Review
+    
+    
     =Inconclusive
-    The investigation was inconclusive. The mystery of the missing socks will never be solved. -> END
+    Who could it be? Well, it's not as if you can do anything to ghosts, so The Detective left without doing anything. -> END

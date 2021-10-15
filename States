@@ -1,0 +1,28 @@
+LIST WantsSocks = None, A1, A2, A3, A4
+// All; 
+// Martha, Smokey, Xiao, Henry, Maximilian; 
+// Martha, Xiao, Henry; 
+// Martha, Henry
+// Martha
+LIST Whistles = None, B1, B2, B3, B4
+// All;
+// Martha, Alexander, Xiao, Henry, Maximilian;
+// Martha, Alexander, Henry, Maximilian;
+// Martha, Alexander, Maximilian
+// Martha
+LIST Coughs = None, C1, C2, C3, C4
+// All;
+// Martha, Alexander, Smokey, Henry, Maximilian
+// Martha, Smokey, Henry, Maximilian
+// Martha, Smokey
+// Martha
+
+~WantsSocks = WantsSocks.None
+~Whistles = Whistles.None
+~Coughs = Coughs.None
+
+=== function move_to_state(ref machine, state) ===
+    {machine < state:
+        ~machine++
+        ~move_to_state(machine, state)
+    }
