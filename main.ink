@@ -39,7 +39,7 @@ Inside the hotel's lobby there are six ghosts. The detective walked over to...
 // * 4
 //     -> 4 ->
 //     -> main
-* The one with an unknown name
+* The one who's face is covered. 
     -> Xiao ->
     -> main
 * the fancy gentlemen dressed in an exquisite suit and weilds an amazing moustache.
