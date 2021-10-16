@@ -36,9 +36,9 @@ Inside the hotel's lobby there are six ghosts. The detective walked over to...
 * the one dressed in old-timey overalls and covered in soot.
     -> Smokey ->
     -> main
-// * 4
-//     -> 4 ->
-//     -> main
+ The one wearing a tattered war uniform from centuries ago and missing a foot.
+     -> Henry ->
+     -> main
 * The one with an unknown name
     -> Xiao ->
     -> main
