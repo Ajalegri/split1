@@ -12,8 +12,6 @@ body {
     background: white;
     overflow: hidden;
     cursor:url(sock_pointer.cur),auto;
-	
-	
 }
 
 body.switched {
