@@ -7,9 +7,23 @@ With the interrogations finished, The Detective reviews their information. -> Re
     {Whistles == Whistles.None: No idea.}{Whistles == B1: It could be Martha, Alexander, Xiao, Henry, or Maximilian.}{Whistles == B2: It could be Martha, Alexander, Henry, or Maximilian.}{Whistles == B3: It could be Martha, Alexander, or Maximilian.}{Whistles == B4: Just Martha.}
     * Who coughs a lot?
     {Coughs == Coughs.None: No idea.}{Coughs == C1: It could be Martha, Alexander, Smokey, Henry, or Maximilian.}{Coughs == C2: It could be Martha, Smokey, Henry, or Maximilian.}{Coughs == C3: It could be Martha or Smokey.}{Coughs == C4: Just Martha.}
-    * -> Inconclusive
+    * -> Choose
     - -> Review
     
+    =Choose
+    *It was Martha! -> Correct
+    *It was Alexander! -> Wrong
+    *It was Smokey! -> Wrong
+    *It was Xiao! -> Wrong
+    *It was Henry! -> Wrong
+    *It was Maximilian! -> Wrong
+    *It's impossible to tell. -> Inconclusive
+    
+    =Correct
+    It turned out that the sock thief was, in fact, Martha. However, it's not as if you can do anything to ghosts, so The Detective left without doing anything, and went on to do something more productive. -> END
+    
+    =Wrong
+    It turned out that The Detective's choice was completely wrong. However, it's not as if you can do anything to ghosts, so The Detective left without doing anything, and went on to do something more productive. -> END
     
     =Inconclusive
-    Who could it be? Well, it's not as if you can do anything to ghosts, so The Detective left without doing anything. -> END
+    Who could it be? Well, it's not as if you can do anything to ghosts, so The Detective left without doing anything, and went on to do something more productive. -> END

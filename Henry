@@ -1,6 +1,5 @@
 === Henry ===
 
-
     = interrogation
     
     "Hello Mr. uuuh..."
@@ -41,10 +40,6 @@
         ~WantsSocks++
         
         -> henry_main
-        
-
-     **  "Would anyone besides you want to take only right socks?"
-        "I don't really do much pryin' into other spectres affairs, I only hear what I hear"
 
      *  "Does anyone here like to whistle?"
         "Well, on top of my propensity for rhyme, I'm also quite the songbird myself. Quite good at it too, best in the corps! I suppose that Alexander is jolly enough for it as well. And Martha whistles that song to her babe."
@@ -52,12 +47,10 @@
         
         -> henry_main
 
-     ** "Would you characterize any of that whistling as spooky?"
-        "I only use my tones for easing the soul, nothing to be called spooky is worth a parting here!"
-
 	 *  "You ever notice anyone around here coughing?"
 		"That Martha hacks and chokes worse than any of the old boys in the cavalry as I can remember em'."
         ~ Coughs++
 
         *** Henry adopts a thousand-yard stare and almost seems to forget you're standing there, you should move on...
                 ->-> main
+

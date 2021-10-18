@@ -64,7 +64,7 @@ Inside the hotel's lobby there are six ghosts. The detective walked over to...
     -> Henry ->
     -> main
     
-* {know_Maximilian == false} [The fancy gentlemen dressed in an exquisite suit and weilds an amazing moustache.]
+* {know_Maximilian == false} [The fancy gentlemen dressed in an exquisite suit and wields an amazing moustache.]
     -> Maximilian ->
     -> main
 * {know_Maximilian == true} [Maximilian.]
