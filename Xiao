@@ -20,7 +20,7 @@
         "May I ask what your name is?" the detective asked, but was met with more confusion and silence.
 
         "You're not gonna get too much out of her." another voice spoke.
-        ->Xiao_beginning
+        -> Xiao_beginning
 
         ===Xiao_beginning
 
@@ -54,7 +54,7 @@
                     ***"What do you know about the missing Socks?"
                         "Chó͘-má was telling me about something going on with the other ghosts. She tells me all about her experiences with them, what would you like to know?"
                         
-                        ->Xiao_sub_questions 
+                        -> Xiao_sub_questions 
                 
                 ===Xiao_sub_questions
 
@@ -68,7 +68,10 @@
                             The detective took note of that.
                             ~Whistles++ 
 
-                            ->Xiao_sub_questions
+                            ****Ask more questions
+                                -> Xiao_sub_questions
+                            ****Thank you for your time
+                                -> main
 
                     * "I couldn't help but notice that Chó͘-má is wearing a pair of worn-out socks."
                         "Ah yes, I understand why you would notice that." Xiao took a deep breath. 
@@ -76,5 +79,9 @@
                         "Chó͘-má was lucky to be able to immigrate to the US when she did. There was a large limitation of Asian immigrants in the 1900s and living here wasn't much easier. She was forced to work long hours in order to survive and it was all in an extremely hostile and racist environment. Getting new socks was the last thing on her mind."
                         ~WantsSocks++
 
-                        //He paused for a second and looked at the detective. "I'm the first generation that was able to get a proper education. The first that is able to hold a conversation with someone who speaks english and the first that was able to confidently believe that their child would grow up and be able to chase their future."
-        ->->
+                        // He paused for a second and looked at the detective. "I'm the first generation that was able to get a proper education. The first that is able to hold a conversation with someone who speaks english and the first that was able to confidently believe that their child would grow up and be able to chase their future."
+                        
+                        **Ask more questions
+                            -> Xiao_sub_questions    
+                        **Thank you for your time
+                            -> main 
