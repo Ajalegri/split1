@@ -27,44 +27,45 @@ They're also certain that one of the ghosts living in an abandoned hotel nearby 
 
 Inside the hotel's lobby there are six ghosts. The detective walked over to...
 
-* {know_Martha == false} the tired-looking woman with a baby.
+* {know_Martha == false} [the tired-looking woman with a baby.]
     -> Martha ->
     -> main
-* {know_Martha == true} Martha.
+* {know_Martha == true} [Martha.]
     -> Martha ->
     -> main
     
-* {know_Alexander == false} an older ghost wearing a tattered cheap suit jacket decades out of style, holding a notebook and a deck of oversized cards.
+* {know_Alexander == false} [an older ghost wearing a tattered cheap suit jacket decades out of style, holding a notebook and a deck of oversized cards.]
      -> Alexander ->
      -> main
-* {know_Alexander == true} Alexander.
+* {know_Alexander == true} [Alexander.]
      -> Alexander ->
      -> main
      
-* {know_Smokey == false} the one dressed in old-timey overalls and covered in soot.
+* {know_Smokey == false} [the one dressed in old-timey overalls and covered in soot.]
     -> Smokey ->
     -> main
-* {know_Smokey == true} Smokey.
+* {know_Smokey == true} [Smokey.]
     -> Smokey ->
     -> main    
 
-// * 4
-//     -> 4 ->
-//     -> main
-
-* {know_Xiao == false} the one who's face is covered. 
+* {know_Xiao == false} [the one who's face is covered.]
     -> Xiao ->
     -> main
-* {know_Xiao == true} Xiao. 
+* {know_Xiao == true} [Xiao.]
     -> Xiao ->
     -> main
     
-* {know_Maximilian == false} the fancy gentlemen dressed in an exquisite suit and weilds an amazing moustache.
+// * 5
+//     -> 5 ->
+//     -> main
+    
+* {know_Maximilian == false} [the fancy gentlemen dressed in an exquisite suit and weilds an amazing moustache.]
     -> Maximilian ->
     -> main
-* {know_Maximilian == true} Maximilian.
+* {know_Maximilian == true} [Maximilian.]
     -> Maximilian_known ->
     -> main
 
 
-* -> Conclusion
+* Deduct who it is
+    -> Conclusion
