@@ -11,8 +11,7 @@
         "Martha, I have some questions for you if you don't mind?"
 
         * Anything you can tell me about the other ghosts in this house?
-           "Oh my I could talk for days, no one likes to talk too much to me these days, but I figure it's because the baby is always crying. So I just clean. Keeps me busy ya know? Gosh there are some days I wish I had just given up the whole pickett fence, and gone off to Hollywood or something, you know saw all the nifty things of the world. I tell you the boys used to think I was a real dolly back before I went belly up, and well I think I could have made it, but then I got circled and had this here little ankle biter as my husband used to say. He was a real greaser, but well I just don't know why he's not here with me in the afterlife. Anywho i'm plenty pretty right? My singing is as pretty as my whistling you had to have heard it, the little guy here loves it. Don't you think I coulda made it in Hollywood? 
-           ~Whistles++
+           "Oh my I could talk for days, no one likes to talk too much to me these days, but I figure it's because the baby is always crying. So I just clean. Keeps me busy ya know? Gosh there are some days I wish I had just given up the whole pickett fence, and gone off to Hollywood or something, you know saw all the nifty things of the world. I tell you the boys used to think I was a real dolly back before I went belly up, and well I think I could have made it, but then I got circled and had this here little ankle biter as my husband used to say. He was a real greaser, but well I just don't know why he's not here with me in the afterlife. Anywho i'm plenty pretty right? My singing is as pretty as my whistling you had to have heard it, the little guy here loves it. Don't you think I coulda made it in Hollywood?
            The Detective is visibly baffled and overwhelmed, but took note of her whistle and pondered if she was worth talking more. Some would consider that tune a bit eerie. 
            **Continue listening to Martha?
            ->martha2_main 
@@ -24,12 +23,12 @@
            Martha seems distracted when she see's a cigarette bud on the ground.
            "Oh heck if I find one more thing on the ground just laying around I just might flip my lid." Martha visibly is holding back her annoyance.
            "Let's see, Smokey well the name say's it all. That man smokes, and smokes and smokes, but oh it'll be a cold day in hell if you get him to clean up can't hear a darn thing either... He still shares a smoke with me when i'm out so he's alright in my book. I wish I could help the poor thing take care of that cough of his.  Maximilian, I just don't know, always talking strangely big words. Xiao the foreigner, well I don't trust anyone that could be a commie. I'm no racist, but well you can't be too careful about it these days right? Alexander he's a strange one but he's got some real neat tricks to show ya. I was using a sock to clean with, and well he made it dissapear right in front of me, was really just amazing." 
-          ~WantsSocks++
+          ~move_to_state(WantsSocks, A1)
             The Detective realizes a need for socks. Martha's baby lets out another large wail disolving that thought.
            "Oh this little guy is getting restless I really outta get back to work." Martha looks over at Smokey who lets out a sigh and gives her a cigarette. 
            "They say these are real bad for you these day's, but I figure i'm already dead so whats the harm? Anywho do a girl a favor and light me up." 
            The Detective leans forward lights her cigarette, relieved she seems to finally be done talking. She lets out a horrendous smokers cough. The Detective takes quick note of it. Unable to take anymore of her The Detective seizes the oppurtunity to move on. 
            "Well i'll leave you to it."
            "If you need anything else just give me a jingle I'll be here." Martha says cigarette smoke blowing on her poor baby as she leans down to pick up another of Smokey's buds. 
-           ~Coughs++
+           ~move_to_state(Coughs, C1)
             ->->

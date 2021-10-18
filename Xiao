@@ -49,7 +49,7 @@
                             "Some of them whistle some really weird stuff. Martha, Alexander, Henry, and Maximilian all whistle, but Martha, Alexander, and Maximilian all whistle the weird stuff. I'd rather not approach them."
 
                             The detective took note of that.
-                            ~Whistles++ 
+                            ~move_to_state(Whistles, B3)
 
                             ****Ask more questions
                                 -> Xiao_sub_questions
@@ -60,7 +60,7 @@
                         "Ah yes, I understand why you would notice that." Xiao took a deep breath. 
 
                         "Chó͘-má was lucky to be able to immigrate to the US when she did. There was a large limitation of Asian immigrants in the 1900s and living here wasn't much easier. She was forced to work long hours in order to survive and it was all in an extremely hostile and racist environment. Getting new socks was the last thing on her mind."
-                        ~WantsSocks++
+                        ~move_to_state(WantsSocks, A1)
 
                         // He paused for a second and looked at the detective. "I'm the first generation that was able to get a proper education. The first that is able to hold a conversation with someone who speaks english and the first that was able to confidently believe that their child would grow up and be able to chase their future."
 

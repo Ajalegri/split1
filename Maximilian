@@ -37,8 +37,8 @@
             
             DETECTIVE: Interesting. I'll keep that in mind.
             
-            ~ WantsSocks++
-            ~ interrogation_wants_socks++
+            ~move_to_state(WantsSocks, A1)
+            ~interrogation_wants_socks++
 
             -> Maximilian_main
             
@@ -51,8 +51,7 @@
             
             MAXIMILIAN: No problem, Detective!
             
-            ~ WantsSocks++
-            ~ WantsSocks++
+            ~move_to_state(WantsSocks, A3)
             ~ interrogation_wants_socks++
             -> Maximilian_main
         
@@ -74,8 +73,7 @@
                     
                     MAXIMILIAN: No problem, Detective.
                     
-                    ~ Whistles++
-                    ~ Whistles++
+                    ~move_to_state(Whistles, B3)
                     ~ interrogation_whistles++
                     -> Maximilian_main
             
@@ -84,7 +82,7 @@
                     
                     MAXIMILIAN: No problem, Detective.
                 
-                    ~ Whistles++
+                    ~move_to_state(Whistles, B1)
                     ~ interrogation_whistles++
                     -> Maximilian_main
         

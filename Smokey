@@ -16,27 +16,27 @@
         ==smokey_main
             VAR q1 = false
             VAR q2 = false
-            *{WantsSocks < A1 && q1 == false}"Do you know who would want to steal socks from the villagers?"
+            *{WantsSocks < A3 && q1 == false}"Do you know who would want to steal socks from the villagers?"
                 "Hmm, well I've got enough socks in my room, but old Henry never had socks in his time, maybe he'd want some. Come to think of it, poor Martha likes cleaning, she might have picked some up. Think it takes her mind off things. Either that or just gives her a chance to stew on some gossip. But I don't think any of us here would wanna steal nothing."
-                ~ WantsSocks = A3
+                ~move_to_state(WantsSocks, A3)
                 ~ q1 = true
                 -> smokey_main
-            *{WantsSocks == A3 && q1 == false}"Between Martha and Henry, who's more likely to take socks from villagers?"
+            *{WantsSocks >= A3 && q1 == false}"Between Martha and Henry, who's more likely to take socks from villagers?"
                 "That's a queer question, if you don't mind me sayin'. 
                 He thinks for a few seconds, putting his hand on his chin, leaving more soot on both his hand and face, somehow.
                 "If I had to say, definitely Martha. Henry might want socks, but he wouldn't take anything without asking. Martha, though, might have picked some up when cleaning. When she's tidying up, she don't pay much attention to anything but that.
-                ~ WantsSocks = A4
+                ~move_to_state(WantsSocks, A4)
                 ~ q1 = true
                 -> smokey_main
             *{Coughs < C1 && q2 == false}["Do any of the other ghosts also cough?"] "Seems like you've got it pretty bad, but do any of the other ghosts also cough?"
                 "Oh sure! da--" He begins coughing again, and settles down after a couple seconds.
                 "'Scuse me. Dang near all of us cough sometimes." He pauses for a moment. "'Cept Xiao over there, now I think of it. Man don't speak much, and certainly don't make noises when he don't mean to."
-                ~ Coughs++
+                ~move_to_state(Coughs, C1)
                 ~ q2 = true
                 -> smokey_main
-            *{Coughs == C1 && q2 == false}"Out of everyone besides Xiao, who would you say coughs the least?"
+            *{Coughs >= C1 && q2 == false}"Out of everyone besides Xiao, who would you say coughs the least?"
                 "Odd question there, friend. Though I'd have to say probably Alexander. Man's, uh, eloquent. Too focused on talking to have time to cough.
-                ~ Coughs++
+                ~move_to_state(Coughs, C2)
                 ~ q2 = true
                 -> smokey_main
             

@@ -37,19 +37,17 @@
   
      *  "Out of all of your fellow... ghosts, who do you think might be taking the socks?"
          He glares down at his right leg "This ol' thing still gets a fierce chill in it every night, i'd sure love to have something to keep warm, but it seems a lost cause...
-        ~WantsSocks++
-        
         -> henry_main
 
      *  "Does anyone here like to whistle?"
-        "Well, on top of my propensity for rhyme, I'm also quite the songbird myself. Quite good at it too, best in the corps! I suppose that Alexander is jolly enough for it as well. And Martha whistles that song to her babe."
-        ~Whistles++
+        "Well, on top of my propensity for rhyme, I'm also quite the songbird myself. Quite good at it too, best in the corps! I suppose Maximilian and that Alexander are jolly enough for it as well. And Martha whistles that song to her babe."
+        ~move_to_state(Whistles, B2)
         
         -> henry_main
 
 	 *  "You ever notice anyone around here coughing?"
 		"That Martha hacks and chokes worse than any of the old boys in the cavalry as I can remember em'."
-        ~ Coughs++
+        ~move_to_state(Coughs, C4)
 
         *** Henry adopts a thousand-yard stare and almost seems to forget you're standing there, you should move on...
                 ->-> main
