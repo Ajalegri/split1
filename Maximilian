@@ -1,13 +1,13 @@
 === Maximilian ===
 
     = interrogation
-        UNKOWN: "Hello there, young lad! How may I be of service to you today?"
+        UNKOWN: Hello there, young lad! How may I be of service to you today?
         
-        DETECTIVE: "Hi Mr..."
+        DETECTIVE: Hi Mr...
         
-        MAXIMILIAN: "Sir Maximilian's the name, don't wear it out now, heh."
+        MAXIMILIAN: Sir Maximilian's the name, don't wear it out now, heh.
         
-        DETECTIVE: "Hello, Sir Maximilian. I have a couple questions for you..."
+        DETECTIVE: Hello, Sir Maximilian. I have a couple questions for you...
         
         ~ know_Maximilian = true
         
@@ -15,7 +15,7 @@
         
     === Maximilian_known
     
-        DETECTIVE:
+        DETECTIVE: 
         
         MAXIMILIAN:
         
@@ -28,26 +28,59 @@
         VAR interrogation_whistles = 0
         VAR interrogation_coughs = 0
     
-        + {interrogation_wants_socks == 0} DETECTIVE: Do you know anyone who would want socks?
-           
-           
-            ~ interrogation_wants_socks = interrogation_wants_socks + 1
+        * {WantsSocks < A1} [Do you know anyone here who likes to collect items?]
+            DETECTIVE: Do you know anyone here who likes to collect items?
+            
+            MAXIMILIAN:
+            
+           ~WantsSocks++
+            ~ interrogation_wants_socks++
 
             -> Maximilian_main
+            
+        * {WantsSocks >= A1 && interrogation_wants_socks == 0} [Do you know anyone who would want socks?]
+            DETECTIVE: Do you know anyone who would want socks?
+            
+            MAXIMILIAN: Hmm, now that you mention it. I've seen Martha and Henry both seem to have an interests to socks. Martha's a clean freak though, always wanting to wash our clothing, which I think is pretty weird since we're dead.
+            
+            DETECTIVE: That's some useful information. Thank you Maxie!
+            
+            MAXIMILIAN: No problem, Detective!
+            
+            ~ know_Martha = true
+            ~ know_Henry = true
+            ~ WantsSocks++
+            ~ WantsSocks++
+            ~ interrogation_wants_socks++
+            -> Maximilian_main
         
-        + {interrogation_whistles == 0} DETECTIVE: Do you know anyone who whistles?
-           
-           
-            ~ interrogation_whistles = interrogation_whistles + 1
+        * [Do you know anyone who whistles?]
+            DETECTIVE: Do you know anyone who whistles?
+            
+            MAXIMILIAN: 
+            
+                ** {Whistles >= B1} [C'mon, I know you know more Maximilian!]
+                DETECTIVE: C'mon, I know you know more Maximilian!
+                
+                MAXIMILIAN: 
+                ~ Whistles++
+                ~ Whistles++
+                ~ interrogation_whistles++
+                -> Maximilian_main
+            
+            ~ Whistles++
+            ~ interrogation_whistles++
             
             -> Maximilian_main
         
-        + {interrogation_coughs == 0} Detective: Do you know anyone who coughs?
+        * {interrogation_coughs == 0} [Do you know anyone who coughs?]
+            DETECTIVE: Do you know anyone who coughs?
             
+            MAXIMILIAN: I'm afraid I can't say I've heard any of these ghosts cough. I think they could be able to cough though, given that some of them smoke profusely!
             
-            ~ interrogation_coughs = interrogation_coughs + 1
-            
+            ~ interrogation_coughs++
             -> Maximilian_main
         
         + {interrogation_wants_socks != 0 && interrogation_whistles != 0 && interrogation_coughs != 0} DETECTIVE: Goodbye, thanks for your time.
-        ->->
+            
+            ->->
