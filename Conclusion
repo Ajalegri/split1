@@ -11,13 +11,13 @@ With the interrogations finished, The Detective reviews their information. -> Re
     - -> Review
     
     =Choose
-    *It was Martha! -> Correct
-    *It was Alexander! -> Wrong
-    *It was Smokey! -> Wrong
-    *It was Xiao! -> Wrong
-    *It was Henry! -> Wrong
-    *It was Maximilian! -> Wrong
-    *It's impossible to tell. -> Inconclusive
+    *[It was Martha!] -> Correct
+    *[It was Alexander!] -> Wrong
+    *[It was Smokey!] -> Wrong
+    *[It was Xiao!] -> Wrong
+    *[It was Henry!] -> Wrong
+    *[It was Maximilian!] -> Wrong
+    *[It's impossible to tell.] -> Inconclusive
     
     =Correct
     It turned out that the sock thief was, in fact, Martha. However, it's not as if you can do anything to ghosts, so The Detective left without doing anything, and went on to do something more productive. -> END
