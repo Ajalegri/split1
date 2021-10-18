@@ -52,8 +52,6 @@
 	 *  "You ever notice anyone around here coughing?"
 		"That Martha hacks and chokes worse than any of the old boys in the cavalry as I can remember em'."
         ~ Coughs++
-        
-        -> henry_main
 
         ** Henry adopts a thousand-yard stare and almost seems to forget you're standing there, you should move on...
                 ->-> main
