@@ -27,9 +27,3 @@ LIST Coughs = None, C1, C2, C3, C4
         ~move_to_state(machine, state)
     }
     
-VAR know_Smokey = false
-VAR know_Martha = false
-VAR know_Xiao = false
-VAR know_Maximilian = false
-VAR know_Alexander = false
-VAR know_Henry = false

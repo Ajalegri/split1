@@ -9,8 +9,6 @@
         
         DETECTIVE: Hello, Sir Maximilian. I have a couple questions for you...
         
-        ~ know_Maximilian = true
-        
         -> Maximilian_main
         
     === Maximilian_known
@@ -31,9 +29,15 @@
         * {WantsSocks < A1} [Do you know anyone here who likes to collect items?]
             DETECTIVE: Do you know anyone here who likes to collect items?
             
-            MAXIMILIAN:
+            MAXIMILIAN: Yeah, I know lots of them love to collect stuff. In fact I believe everyone has collected something in their lives. Except Alexander, he seems like an oddball, never seeing the value or purpose of storing items. He deems it useless.
             
-           ~WantsSocks++
+            DETECTIVE: I see... And how about yourself Sir Maximilian?
+            
+            MAXIMILIAN: I myself am sort of a connoisseur of item collection as well. You see I love to go adventuring around the world, visiting exotic places, like the Galápagos Islands. I would always bring something back as a momento from my trip!
+            
+            DETECTIVE: Interesting. I'll keep that in mind.
+            
+            ~ WantsSocks++
             ~ interrogation_wants_socks++
 
             -> Maximilian_main
@@ -47,41 +51,58 @@
             
             MAXIMILIAN: No problem, Detective!
             
-            ~ know_Martha = true
-            ~ know_Henry = true
             ~ WantsSocks++
             ~ WantsSocks++
             ~ interrogation_wants_socks++
             -> Maximilian_main
         
-        * [Do you know anyone who whistles?]
-            DETECTIVE: Do you know anyone who whistles?
+        * [Do you know anyone in this hotel who whistles?]
+            DETECTIVE: Do you know anyone in this hotel who whistles?
             
-            MAXIMILIAN: 
+            MAXIMILIAN: Everyone can whistle, some better than others. However, Smokey can't seem to be able to whistle anymore. Seems like smoking cigarettes can do that to ya.
             
                 ** {Whistles >= B1} [C'mon, I know you know more Maximilian!]
-                DETECTIVE: C'mon, I know you know more Maximilian!
+                    DETECTIVE: C'mon, I know you know more Maximilian!
                 
-                MAXIMILIAN: 
+                    MAXIMILIAN: Okay, okay... Jeez, if you must insists, Alexander is a masterful whistler, also whistling to his favorite tune. Martha on the other hand, she is constantly whistling to her baby. That and her constant talking, it drives me crazy!
+                    
+                    DETECTIVE: How about yourself? Consider yourself a pretty good whistler?
+                    
+                    MAXIMILIAN: Yeah, I can whistle pretty good. Learned it from my old man who taught me how to do it with my fingers.
+                    
+                    DETECTIVE: Thank you for cooperating.
+                    
+                    MAXIMILIAN: No problem, Detective.
+                    
+                    ~ Whistles++
+                    ~ Whistles++
+                    ~ interrogation_whistles++
+                    -> Maximilian_main
+            
+                ** {Whistles < B1}[Thank you for cooperating.]
+                    DETECTIVE: Thank you for cooperating.
+                    
+                    MAXIMILIAN: No problem, Detective.
                 
-                ~ Whistles++
-                ~ Whistles++
-                ~ interrogation_whistles++
-                -> Maximilian_main
-            
-            ~ Whistles++
-            ~ interrogation_whistles++
-            
-            -> Maximilian_main
+                    ~ Whistles++
+                    ~ interrogation_whistles++
+                    -> Maximilian_main
         
         * {interrogation_coughs == 0} [Do you know anyone who coughs?]
             DETECTIVE: Do you know anyone who coughs?
             
             MAXIMILIAN: I'm afraid I can't say I've heard any of these ghosts cough. I think they could be able to cough though, given that some of them smoke profusely!
             
+            DETECTIVE: Hmm, that doesn't really help with the investigation.
+            
+            MAXIMILIAN: Sorry to dissapoint.
+            
             ~ interrogation_coughs++
             -> Maximilian_main
         
-        + {interrogation_wants_socks != 0 && interrogation_whistles != 0 && interrogation_coughs != 0} DETECTIVE: Goodbye, thanks for your time.
+        + {interrogation_wants_socks != 0 && interrogation_whistles != 0 && interrogation_coughs != 0} [Goodbye, thanks for your time.]
+            DETECTIVE: Goodbye, thanks for your time.
+            
+            MAXIMILIAN: See you around, Detective.
             
             ->->
