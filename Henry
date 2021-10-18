@@ -28,8 +28,6 @@
             ->henry_main
 
 
-    
-
     ===henry's_tale
 
         "Here Henry will rattle off the tale of the battle where he lost his leg, rhyming it the whole way through. Eventually this will transition into the actual questioning"
@@ -39,20 +37,21 @@
   
      *"Out of all of your fellow... ghosts, who do you think might be taking the socks?"
         He glares down at his right leg "This ol' thing still gets a fierce chill in it every night, i'd sure love to have something to keep warm, but it seems a lost cause... That Alexander though, too... jubilent a fellow. Don't trust him much."
-        ->->
+      ~WantsSocks++
 
-    * {Whistles <= B2} "Does anyone here like to whistle?"
+
+    *   "Does anyone here like to whistle?"
         "Well, on top of my propensity for rhyme, I'm also quite the songbird myself. Quite good at it too, best in the corps! I suppose that Alexander is jolly enough for it as well. And Martha whistles that song to her babe."
-        ->->
+      
 
-	 * {Whistles >= B3} "Out of Martha, you, and Maximilian, who would you say whistles the spookiest tune?"
+	 *  "Out of Martha, you, and Maximilian, who would you say whistles the spookiest tune?"
         "Smokey certainly makes his attempt, but it ain't all worth much but puttin ya down."
-		->->
+		~Whistles++
 
-	 * {Coughs <= C1} "You ever notice anyone around here coughing?"
+	 *  "You ever notice anyone around here coughing?"
 		"That Martha hacks and chokes worse than any of the old boys in the cavalry as I can remember em'."
         ->->
 
-	 * {Coughs <= C1} "I hear that Maximilian, Smokey, Henry, and Martha all are coughers. Would you say any of them coughs more, or louder than the others?"
+	 *  "I hear that Maximilian, Smokey, Henry, and Martha all are coughers. Would you say any of them coughs more, or louder than the others?"
 		"That Martha hacks and chokes worse than any of the old boys in the cavalry as I can remember em'."
     	->->
