@@ -13,6 +13,8 @@
         The ghost tilted their head and looked at the detective, puzzled. Nothing but silence followed. 
 
         This particular ghost didn't look like the others. They wore a worn-out gown and pair of trousers, along with a bandana-esque scarf around their neck. If there was a guess, the ghost looked elderly, but the detective couldn't make out their face.
+
+        It was noted that they wore a pair of torn socks. 
         // work on description
 
         "May I ask what your name is?" the detective asked, but was met with more confusion and silence.
@@ -43,36 +45,36 @@
 
                 *"Who are you?" 
                 "My name is Xiao, I am a fourth generation immigrant. This is Chó͘-má, my great-grandmother." Xiao gestures towards Chó͘-má who was staring at Xiao with the greatest smile on her face. 
-                    *"Chó͘-má seems to be looking at you."
+                    **"Chó͘-má seems to be looking at you."
                     "Ah pay it no mind. She does this regularly, even my Ama does this too. It bothers me sometimes, but I know they mean no harm." Xiao looked back at Chó͘-má and smiled somberly.
 
                     Xiao starts whistling a melodic tone. The detective patiently listened and waited for Xiao to finish. 
-                    ->Xiao_questions
+
+
+                    ***"What do you know about the missing Socks?"
+                        "Chó͘-má was telling me about something going on with the other ghosts. She tells me all about her experiences with them, what would you like to know?"
+                        
+                        ->Xiao_sub_questions 
                 
-                *"What do you know about the missing Socks?"
-                "Chó͘-má was telling me about something going on with the other ghosts. "
-                ->Xiao_questions
-                    
-            
+                ===Xiao_sub_questions
 
-    
+                    *"You were whistling a beautiful tune earlier, do you know if anyone else here likes to whistle?"
+                        "Why thank you, my mother taught me that tune and it's been passed down for generations. As for other people whistling..." Xiao pondered for a second and then spoke to Chó͘-má briefly. "There are a few others who whistle. Max, Martha, Alexander are the ones that Chó͘-má has heard."
+                        ** "Have you considered teaching your fellow ghosts?"
+                            "Teaching fellow ghosts... I don't think it would be that simple..."
+                            ***"Why not?"
+                            "Some of them whistle some really weird stuff. Martha, Alexander, Henry, and Maximilian all whistle, but Martha, Alexander, and Maximilian all whistle the weird stuff. I'd rather not approach them."
 
+                            The detective took note of that.
+                            ~Whistles++ 
 
+                            ->Xiao_sub_questions
 
+                    * "I couldn't help but notice that Chó͘-má is wearing a pair of worn-out socks."
+                        "Ah yes, I understand why you would notice that." Xiao took a deep breath. 
 
+                        "Chó͘-má was lucky to be able to immigrate to the US when she did. There was a large limitation of Asian immigrants in the 1900s and living here wasn't much easier. She was forced to work long hours in order to survive and it was all in an extremely hostile and racist environment. Getting new socks was the last thing on her mind."
+                        ~WantsSocks++
 
-
-
-        /*
-         Speak about their clothing
-            - Need to do more research on this. 
-         
-         Realize that they do no speak English
-         
-         Another ghost appears, younger generation, and is able to speak for/translate your conversation.
-            - Younger ghost is a fourth generation immigrant. 
-            
-        
-        */
-
+                        //He paused for a second and looked at the detective. "I'm the first generation that was able to get a proper education. The first that is able to hold a conversation with someone who speaks english and the first that was able to confidently believe that their child would grow up and be able to chase their future."
         ->->
