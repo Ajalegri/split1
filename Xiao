@@ -63,8 +63,5 @@
                         ~move_to_state(WantsSocks, A1)
 
                         // He paused for a second and looked at the detective. "I'm the first generation that was able to get a proper education. The first that is able to hold a conversation with someone who speaks english and the first that was able to confidently believe that their child would grow up and be able to chase their future."
-
-                        **Ask more questions
-                            -> Xiao_sub_questions    
                         **Thank you for your time
                             -> main 
