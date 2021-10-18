@@ -1,17 +1,53 @@
 === Maximilian ===
-    
+
     = interrogation
-        "Hello there, young lad! How may I be of service to you today?", said the ghost.
+        UNKOWN: "Hello there, young lad! How may I be of service to you today?"
         
-        "Hi Mr..."
+        DETECTIVE: "Hi Mr..."
         
-        "Sir Maximilian's the name, don't wear it out now, heh."
+        MAXIMILIAN: "Sir Maximilian's the name, don't wear it out now, heh."
         
-        "Hello, Sir Maximilian. I have a couple questions for you..."
+        DETECTIVE: "Hello, Sir Maximilian. I have a couple questions for you..."
+        
+        ~ know_Maximilian = true
+        
+        -> Maximilian_main
+        
+    === Maximilian_known
     
-        * "Anything you can tell me about the other ghosts in this house?"
-            "Well I know that there are some really nasty ghosts in here. Some always coughing, even some that likes to steal things." {move_to_state(WantsSocks, A1)}
-            "Wow, thanks for the information."
-            ** "Good Bye."
-                "Goodbye!"
-                ->->
+        DETECTIVE:
+        
+        MAXIMILIAN:
+        
+        DETECTIVE:
+        
+        -> Maximilian_main
+
+    === Maximilian_main
+        VAR interrogation_wants_socks = 0
+        VAR interrogation_whistles = 0
+        VAR interrogation_coughs = 0
+    
+        + {interrogation_wants_socks == 0} DETECTIVE: Do you know anyone who would want socks?
+           
+           
+            ~ interrogation_wants_socks = interrogation_wants_socks + 1
+
+            -> Maximilian_main
+        
+        + {interrogation_whistles == 0} DETECTIVE: Do you know anyone who whistles?
+           
+           
+            ~ interrogation_whistles = interrogation_whistles + 1
+            
+            -> Maximilian_main
+        
+        + {interrogation_coughs == 0} Detective: Do you know anyone who coughs?
+            
+            
+            ~ interrogation_coughs = interrogation_coughs + 1
+            
+            -> Maximilian_main
+        
+        + {interrogation_wants_socks != 0 && interrogation_whistles != 0 && interrogation_coughs != 0} DETECTIVE: Goodbye, thanks for your time.
+        ->->

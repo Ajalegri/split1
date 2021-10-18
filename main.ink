@@ -27,23 +27,43 @@ They're also certain that one of the ghosts living in an abandoned hotel nearby 
 
 Inside the hotel's lobby there are six ghosts. The detective walked over to...
 
-* the tired-looking woman with a baby.
+* {know_Martha == false} the tired-looking woman with a baby.
     -> Martha ->
     -> main
-* an older ghost wearing a tattered cheap suit jacket decades out of style, holding a notebook and a deck of oversized cards.
+* {know_Martha == true} Martha.
+    -> Martha ->
+    -> main
+    
+* {know_Alexander == false} an older ghost wearing a tattered cheap suit jacket decades out of style, holding a notebook and a deck of oversized cards.
      -> Alexander ->
      -> main
-* the one dressed in old-timey overalls and covered in soot.
+* {know_Alexander == true} Alexander.
+     -> Alexander ->
+     -> main
+     
+* {know_Smokey == false} the one dressed in old-timey overalls and covered in soot.
     -> Smokey ->
     -> main
+* {know_Smokey == true} Smokey.
+    -> Smokey ->
+    -> main    
+
 // * 4
 //     -> 4 ->
 //     -> main
-* The one who's face is covered. 
+
+* {know_Xiao == false} the one who's face is covered. 
     -> Xiao ->
     -> main
-* the fancy gentlemen dressed in an exquisite suit and weilds an amazing moustache.
+* {know_Xiao == true} Xiao. 
+    -> Xiao ->
+    -> main
+    
+* {know_Maximilian == false} the fancy gentlemen dressed in an exquisite suit and weilds an amazing moustache.
     -> Maximilian ->
+    -> main
+* {know_Maximilian == true} Maximilian.
+    -> Maximilian_known ->
     -> main
 
 
