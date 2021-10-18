@@ -57,7 +57,7 @@ Inside the hotel's lobby there are six ghosts. The detective walked over to...
     -> Xiao ->
     -> main
     
-* {know_Henry == False} [The man wearing a tattered cavalryman uniform from the revolution.]
+* {know_Henry == false} [The man wearing a tattered cavalryman uniform from the revolution.]
     -> Henry ->
     -> main
 * {know_Henry == true} [Henry.]
